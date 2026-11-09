@@ -8,9 +8,9 @@
   "icon": "icon",
   "tags": ["Example", "Batch"],
   "files": {
-    "enable": {"path": "enable.jbat", "kind": "data", "architecture": "any"},
-    "disable": {"path": "disable.jbat", "kind": "data", "architecture": "any"},
-    "dictionary": {"path": "Dictionary.txt", "kind": "data", "architecture": "any"},
+    "enable": {"path": "enable.jbat", "kind": "data", "architecture": "any", "size": 265, "sha256": "50ca8238a12aad959b004cb4d653b44c0a086dab320100e735ec0eeb4c908276"},
+    "disable": {"path": "disable.jbat", "kind": "data", "architecture": "any", "size": 55, "sha256": "77ea15a1dc459599828b384d14eca80aac707aa0a7c2a491678ba89bae0a9094"},
+    "dictionary": {"path": "Dictionary.txt", "kind": "data", "architecture": "any", "size": 34, "sha256": "5b3b6280aa17977f687ccbc702b9b0f613b6ec55ad7880d4b937e6905b4f7ac7"},
     "icon": {
       "path": "batch.png",
       "kind": "data",

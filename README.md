@@ -56,14 +56,14 @@
 
 首次导入即可开启模块。修改脚本后，删除已安装扩展并重启客户端，再导入修改后的目录。出错时通知会标出脚本文件和行号；停用模块可取消等待中的动作。模块设置保存在当前配置档案。
 
-本示例源码清单省略文件校验值，适合本地导入。发布前，为 `files` 中每个文件填写实际 `size`、`sha256`；修改文件后重新计算校验值。例如：
+本示例清单已为全部运行文件填写 `size` 与 `sha256`，可直接用于下载和本地导入。修改脚本、词典或图标后，需重新计算相应文件的字节数与 SHA-256。目录中的 `.gitattributes` 保持 Git 保存的运行文件字节与校验值一致。例如：
 
 ```powershell
 (Get-Item -LiteralPath ./enable.jbat).Length
 (Get-FileHash -LiteralPath ./enable.jbat -Algorithm SHA256).Hash.ToLowerInvariant()
 ```
 
-发布包根目录放入 `extension.json`、`enable.jbat`、`disable.jbat` 和 `Dictionary.txt`。SDK 和 README 可随开发仓库保留。
+发布包根目录放入 `extension.json`、`enable.jbat`、`disable.jbat`、`Dictionary.txt` 和 `batch.png`。SDK 和 README 可随开发仓库保留。
 
 如果使用完整客户端源码仓库，可在仓库根目录自动打包：
 
