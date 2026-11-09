@@ -1,0 +1,5 @@
+# Client API arguments can reference the module configuration.
+/api {"method":"notify","text":{"$ref":"/config/Batch Greeting"},"level":"success"}
+/sleep 300
+/api {"method":"variable.get","name":"fps"}
+/api {"method":"notify","text":{"$ref":"/last"},"title":"FPS"}

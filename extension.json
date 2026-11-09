@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "id": "example-batch",
+  "name": "Batch Starter",
+  "version": "1.0.0",
+  "publisher": "Wormwaker",
+  "description": {"en": "A Jackal batch module extension example.", "zh": "一个 Jackal 批处理模块扩展示例。"},
+  "icon": "icon",
+  "tags": ["Example", "Batch"],
+  "files": {
+    "enable": {"path": "enable.jbat", "kind": "data", "architecture": "any"},
+    "disable": {"path": "disable.jbat", "kind": "data", "architecture": "any"},
+    "dictionary": {"path": "Dictionary.txt", "kind": "data", "architecture": "any"},
+    "icon": {
+      "path": "batch.png",
+      "kind": "data",
+      "architecture": "any",
+      "size": 5107,
+      "sha256": "3196df0077775b4d604e414bd9e7e5ba4ed15bd918b4f054ca29db2d5674d210"
+    }
+  },
+  "script": {"language": "jbat"},
+  "contributes": {"Dictionary": ["dictionary"]},
+  "modules": [{
+    "key": "starter",
+    "name": "BatchStarter",
+    "displayName": {"en": "Batch Starter", "zh": "批处理示例"},
+    "description": {"en": "Shows the configured message and the current FPS.", "zh": "显示配置的欢迎语及当前 FPS。"},
+    "category": "Misc",
+    "defaults": {"Enabled": false, "Batch Greeting": "Hello from Jackal batch"},
+    "behaviors": {"enable": "enable", "disable": "disable"}
+  }]
+}
