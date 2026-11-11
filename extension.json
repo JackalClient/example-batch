@@ -4,6 +4,7 @@
   "name": "Batch Starter",
   "version": "1.0.0",
   "publisher": "Wormwaker",
+  "github": "https://github.com/JackalClient/example-batch",
   "description": {"en": "A Jackal batch module extension example.", "zh": "一个 Jackal 批处理模块扩展示例。"},
   "icon": "icon",
   "tags": ["Example", "Batch"],
